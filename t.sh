@@ -46,6 +46,7 @@ c[i]=$d
 fi
 if [ ${c[i-1]} == "$(chr 255)" & $i -gt 0 ]
 then
+
 continue;
 ++${c[i-1]};
 else ++${c[i]}; break;
