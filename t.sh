@@ -1,3 +1,5 @@
+#!/bin/bash
+rm -f lop
 k=8
 m=""
 p=0
@@ -12,16 +14,18 @@ done
 
 while [ $k -lt 16 ]
 do
-for ((i=0;i<255;++i))
+unset m
+m=""
+for ((i=0;i<k;++i))
 do
-n=$m${c[i]}
-echo $n>>lop.txt
+m=$m${c[i]}
 done
+echo $m>>lop
 
 for ((i=0;i<k;++i))
 do
-d=$(chr 255)
-if [ ${c[i]} != "$d" ]
+d=$(rchr ${c[i]})
+if [ $d. -ne 255 ]
 then
 ++p
 fi
@@ -35,21 +39,25 @@ c[i]=$(chr 33)
 k=$k+1;
 done
 fi
-m="";
-
-for ((i=(k-1);i>0;--i))
+f=$k-1
+for ((i=$f;i>=0;i--))
 do
+
 if [ ${c[i]} == "$(chr 255)" ]
 then
 d=$(chr 33)
 c[i]=$d
 fi
-if [ ${c[i-1]} == "$(chr 255)" & $i -gt 0 ]
+if [ ${c[i]} < "$(chr 255)" ]
 then
-
-continue;
-++${c[i-1]};
-else ++${c[i]}; break;
+d=(rchr $i)
+d=$d+1
+ch[i]=$(chr $d)
+fi
+h=$((i-1))
+if [ $i -gt 0 ] & [ ${c[$h]} == $(chr 255) ]
+then
+c[$h]=$(chr 33)
 fi
 done
 
