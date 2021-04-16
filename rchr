@@ -1,0 +1,2 @@
+c=printf '%d' "'$1"
+echo $c
