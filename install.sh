@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir tempbin
 curl -LO https://github.com/avistnm/test/blob/master/chr
 curl -LO https://github.com/avistnm/test/blob/master/rchr
