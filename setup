@@ -3,8 +3,14 @@ clear
 echo -e "\e[34m Installing core files.....\e[0m"
 arc=$(dpkg --print-architecture)
 cd $PREFIX/bin
+if [[ $arc = "aarch64" ]] || [[ $arc = "arm" ]]
+then
 rm -rf chr
 rm -rf rchr
+else
+sudo rm -rf chr
+sudo rm -rf rchr
+fi
 cd $HOME
 rm -rf r.sh
 rm -rf Wordlist
@@ -15,7 +21,7 @@ cd tempbin
 wget https://raw.githubusercontent.com/avistnm/test/master/chr >/dev/null 2>&1
 wget https://raw.githubusercontent.com/avistnm/test/master/rchr >/dev/null 2>&1
 chmod 777 *
-if [[ $arc = "aarch64" ]]
+if [[ $arc = "aarch64" ]] || [[ $arc = "arm" ]]
 then
 mv * $PREFIX/bin
 else
