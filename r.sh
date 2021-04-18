@@ -20,7 +20,7 @@ cd
 sl()
 {
 
-for ((i=0;i<k;i++)) "${str: -1}"
+for ((i=0;i<k;i++))
 do
 unset d
 unset ll
