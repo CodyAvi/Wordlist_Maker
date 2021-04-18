@@ -43,7 +43,7 @@ clear
 if [[ -f $HOME/Wordlist/wsession/lword ]]
 then
 unset lw
-unset l
+unset ll
 unset nc
 nc=1
 lw="$(cat $HOME/Wordlist/wsession/lword)"
