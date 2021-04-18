@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 rm -f lop
 k=8
 m=""
