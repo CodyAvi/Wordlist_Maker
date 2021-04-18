@@ -47,16 +47,16 @@ fi
 
 while [ $k -lt 18 ]
 do
-echo -ne "\e[34m Creating Wordlist.....\e[0m"
-echo -ne "\e[34m Creating Wordlist..........\e[0m"
-echo -ne "\e[34m Creating Wordlist...............\e[0m"
+echo -ne "\e[34m Creating Wordlist.....\e[0m"\r
+echo -ne "\e[34m Creating Wordlist..........\e[0m"\r
+echo -ne "\e[34m Creating Wordlist...............\e[0m"\r
 unset m
 m=""
 for ((i=0;i<k;++i))
 do
 m=$m"${c[i]}"
 done
-echo "$m">>lop
+echo "$m">>$HOME/Wordlist/lop
 echo "$m">$HOME/Wordlist/wsession/lword
 
 for ((i=0;i<k;++i))
@@ -120,3 +120,4 @@ fi
 i=$((i-1))
 done
 done
+echo -ne "\e[34m Wordlist created and save in $HOME/Wordlist/lop\e[0m"
