@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-rm -f $HOME/Wordlist/lop
 k=8
 m=""
 p=0
@@ -25,6 +24,9 @@ done
 
 nl()
 {
+
+rm -f $HOME/Wordlist/lop
+
 for ((i=0;i<k;++i ))
 do
 unset d
@@ -136,4 +138,5 @@ done
 echo -ne "\e[1;34m Creating Wordlist (|) \e[0m"'\r'
 
 done
+rm -rf $HOME/Wordlist/wsession
 echo -ne "\e[1;32m Wordlist created [✓] and saved in $HOME/Wordlist/lop\e[0m"
