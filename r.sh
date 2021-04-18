@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e "\e[34m Creating Script.....\e[0m"
 rm -f lop
 k=8
 m=""
@@ -53,7 +54,6 @@ for ((i=0;i<k;++i))
 do
 m=$m"${c[i]}"
 done
-echo "$m"
 echo "$m">>lop
 echo "$m">$HOME/Wordlist/wsession/lword
 
@@ -100,8 +100,6 @@ if [ $y -lt 126 ]
 then
 unset d
 d=$y
-echo i=$i
-echo d=$d
 d=$((d+1))
 unset c[i]
 c[i]="$(chr $d)"
