@@ -1,5 +1,4 @@
 #!/bin/bash
-echo -e "\e[34m Creating Script.....\e[0m"
 rm -f lop
 k=8
 m=""
@@ -46,8 +45,11 @@ else
 nl
 fi
 
-while [ $k -lt 16 ]
+while [ $k -lt 18 ]
 do
+echo -ne "\e[34m Creating Wordlist.....\e[0m"
+echo -ne "\e[34m Creating Wordlist..........\e[0m"
+echo -ne "\e[34m Creating Wordlist...............\e[0m"
 unset m
 m=""
 for ((i=0;i<k;++i))
