@@ -48,7 +48,7 @@ fi
 
 while [ $k -lt 18 ]
 do
-echo -ne "\e[34m Creating Wordlist "(/)" \e[0m"'\r'
+echo -ne "\e[34m Creating Wordlist (/) \e[0m"'\r'
 sleep 0.5
 unset m
 m=""
@@ -71,7 +71,7 @@ fi
 unset d
 done
 
-echo -ne "\e[34m Creating Wordlist "(-)" \e[0m"'\r'
+echo -ne "\e[34m Creating Wordlist (-) \e[0m"'\r'
 sleep 0.5
 
 unset d
@@ -94,7 +94,7 @@ then
 continue
 fi
 
-echo -ne "\e[34m Creating Wordlist "(\)" \e[0m"'\r'
+echo -ne "\e[34m Creating Wordlist (\) \e[0m"'\r'
 sleep 0.5
 
 f=$((k-1))
@@ -126,7 +126,7 @@ fi
 i=$((i-1))
 done
 
-echo -ne "\e[34m Creating Wordlist "(|)" \e[0m"'\r'
+echo -ne "\e[34m Creating Wordlist (|) \e[0m"'\r'
 sleep 0.5
 
 done
