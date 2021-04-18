@@ -35,9 +35,9 @@ done
 
 if [[ ! -f $HOME/Wordlist/wsession ]]
 then
-mkdir $HOME/Wordlist/wsession
+mkdir $HOME/Wordlist/wsession >/dev/null 2>&1
 fi
-clear
+
 if [[ -f $HOME/Wordlist/wsession/lword ]]
 then
 unset lw
