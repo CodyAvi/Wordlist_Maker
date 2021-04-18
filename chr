@@ -1,2 +1,2 @@
-c=printf \\$(printf '%03o' $1)
+c="$(printf \\$(printf '%03o' $1))"
 echo "$c"
