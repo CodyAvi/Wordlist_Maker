@@ -33,8 +33,10 @@ c[i]="$d"
 done
 }
 
-if [[ ! -f $HOME/Wordlist/wsession ]]
+if [[ -f $HOME/Wordlist/wsession ]]
 then
+apt update -n >/dev/null 2>&1
+else
 mkdir $HOME/Wordlist/wsession >/dev/null 2>&1
 fi
 
