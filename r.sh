@@ -7,7 +7,11 @@ p=0
 a=0
 i=10
 nc=0
+
+if [[ ! -f $HOME/Wordlist/wsession ]]
+then
 mkdir $HOME/Wordlist/wsession
+fi
 
 echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
 
@@ -15,13 +19,12 @@ cd
 
 sl()
 {
-for ((i=k;i>=0;i--))
+for ((i=0;i<k;i++)) "${str: -1}"
 do
 unset d
-unset l
-l=$((i+1))
-l=$((l*-1))
-d=$(lw:($l))
+unset ll
+ll="${lw : $i}"
+d="$ll"
 c[i]="$d"
 done
 }
