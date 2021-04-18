@@ -5,13 +5,42 @@ m=""
 p=0
 a=0
 i=10
+nc=0
 
+sl()
+{
+for ((i=k;i>=0;i--))
+do
+unset d
+unset l
+l=$((i+1))
+l=$((l*-1))
+d=$(lw:($l))
+c[i]="$d"
+done
+}
+
+nl()
+{
 for ((i=0;i<k;++i ))
 do
 unset d
 d=$(chr 33)
 c[i]="$d"
 done
+}
+
+if [[ -f $HOME/wsession/lword ]]
+then
+unset lw
+unset l
+unset nc
+nc=1
+lw="$(cat $HOME/wsession/lword)"
+sl
+else
+nl
+fi
 
 while [ $k -lt 16 ]
 do
@@ -23,6 +52,7 @@ m=$m"${c[i]}"
 done
 echo "$m"
 echo "$m">>lop
+echo "$m">$HOME/wsession/lword
 
 for ((i=0;i<k;++i))
 do
@@ -31,6 +61,7 @@ d=$(rchr "${c[i]}")
 if [ $d -ne 126 ]
 then
 ((p++))
+break
 fi
 unset d
 done
