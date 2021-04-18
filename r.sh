@@ -39,7 +39,7 @@ echo ""
 else
 mkdir $HOME/Wordlist/wsession
 fi
-
+clear
 if [[ -f $HOME/Wordlist/wsession/lword ]]
 then
 unset lw
@@ -47,12 +47,11 @@ unset l
 unset nc
 nc=1
 lw="$(cat $HOME/Wordlist/wsession/lword)"
-echo -ne "\e[1;33m Continuing Last Session\e[1;32 ✓ \e[0m"
+echo -ne "\e[1;33m Continuing Last Session\e[1;32m ✓ \e[0m"
 sl
 else
 nl
 fi
-clear
 
 echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
 
