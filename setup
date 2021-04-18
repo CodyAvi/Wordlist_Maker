@@ -15,7 +15,7 @@ cd tempbin
 wget https://raw.githubusercontent.com/avistnm/test/master/chr >/dev/null 2>&1
 wget https://raw.githubusercontent.com/avistnm/test/master/rchr >/dev/null 2>&1
 chmod 777 *
-if [[ $arc = "aarch64" ]];
+if [[ $arc = "aarch64" ]]
 then
 mv * $PREFIX/bin
 else
