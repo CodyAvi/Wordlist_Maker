@@ -35,6 +35,13 @@ c[i]="$d"
 done
 }
 
+if [[ -f $HOME/Wordlist/wsession ]]
+then
+echo
+else
+mkdir $HOME/Wordlist/wsession
+fi
+
 if [[ -f $HOME/Wordlist/wsession/lword ]]
 then
 unset lw
@@ -45,7 +52,6 @@ lw="$(cat $HOME/Wordlist/wsession/lword)"
 echo -ne "\e[1;33m Continuing Last Session\e[1;32 ✓ \e[0m"
 sl
 else
-mkdir $HOME/Wordlist/wsession
 nl
 fi
 clear
