@@ -9,7 +9,7 @@ i=10
 nc=0
 mkdir $HOME/Wordlist/wsession
 
-echo -e "\e[1:31m Press [Ctrl+C] to Exit the Script\e[0m"
+echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
 
 cd
 
