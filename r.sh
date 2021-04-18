@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-rm -f lop
+rm -f $HOME/Wordlist/lop
 k=8
 m=""
 p=0
@@ -8,6 +8,8 @@ a=0
 i=10
 nc=0
 mkdir $HOME/Wordlist/wsession
+
+echo "\e[31m Press [Ctrl+C] to Exit the Script\e[0m"
 
 cd
 
@@ -48,8 +50,9 @@ fi
 
 while [ $k -lt 18 ]
 do
+
 echo -ne "\e[34m Creating Wordlist (/) \e[0m"'\r'
-sleep 0.5
+
 unset m
 m=""
 for ((i=0;i<k;++i))
@@ -72,7 +75,6 @@ unset d
 done
 
 echo -ne "\e[34m Creating Wordlist (-) \e[0m"'\r'
-sleep 0.5
 
 unset d
 unset a
@@ -95,7 +97,6 @@ continue
 fi
 
 echo -ne "\e[34m Creating Wordlist (\) \e[0m"'\r'
-sleep 0.5
 
 f=$((k-1))
 i=$f
@@ -127,7 +128,6 @@ i=$((i-1))
 done
 
 echo -ne "\e[34m Creating Wordlist (|) \e[0m"'\r'
-sleep 0.5
 
 done
 echo -ne "\e[34m Wordlist created and save in $HOME/Wordlist/lop\e[0m"
