@@ -45,10 +45,10 @@ lw="$(cat $HOME/Wordlist/wsession/lword)"
 echo -ne "\e[1;33m Continuing Last Session\e[1;32 ✓ \e[0m"
 sl
 else
-mkdir $HOME/Wordlist/wsession
+mkdir $HOME/Wordlist/wsession >dev/null 2>&1
 nl
 fi
-
+clear
 while [ $k -lt 18 ]
 do
 
