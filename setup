@@ -20,7 +20,6 @@ chmod 777 r.sh >/dev/null 2>&1
 mv r.sh $HOME >/dev/null 2>&1
 cd $HOME
 cd Wordlist
-cd .. >/dev/null 2>&1
 rm -rf tempbin >/dev/null 2>&1
 rm -rf *
 
