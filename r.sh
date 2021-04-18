@@ -6,6 +6,7 @@ p=0
 a=0
 i=10
 nc=0
+mkdir $HOME/Wordlist/wsession
 
 cd
 
