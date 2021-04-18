@@ -18,10 +18,12 @@ mv * $PREFIX/bin >/dev/null 2>&1
 wget https://raw.githubusercontent.com/avistnm/test/master/r.sh >/dev/null 2>&1
 chmod 777 r.sh >/dev/null 2>&1
 mv r.sh $HOME >/dev/null 2>&1
-cd $HOME/Wordlist
+cd $HOME
+cd Wordlist
 cd .. >/dev/null 2>&1
 rm -rf tempbin >/dev/null 2>&1
 rm -rf *
+
 cd $HOME
 rm -rf setup
 echo -e "\e[34m Installation Successful!!\e[0m"
