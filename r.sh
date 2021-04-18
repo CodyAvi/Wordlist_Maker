@@ -7,6 +7,8 @@ a=0
 i=10
 nc=0
 
+cd
+
 sl()
 {
 for ((i=k;i>=0;i--))
@@ -30,13 +32,13 @@ c[i]="$d"
 done
 }
 
-if [[ -f $HOME/wsession/lword ]]
+if [[ -f $HOME/Wordlist/wsession/lword ]]
 then
 unset lw
 unset l
 unset nc
 nc=1
-lw="$(cat $HOME/wsession/lword)"
+lw="$(cat $HOME/Wordlist/wsession/lword)"
 sl
 else
 nl
@@ -52,7 +54,7 @@ m=$m"${c[i]}"
 done
 echo "$m"
 echo "$m">>lop
-echo "$m">$HOME/wsession/lword
+echo "$m">$HOME/Wordlist/wsession/lword
 
 for ((i=0;i<k;++i))
 do
