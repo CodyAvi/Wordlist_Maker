@@ -8,11 +8,6 @@ a=0
 i=10
 nc=0
 
-if [[ ! -f $HOME/Wordlist/wsession ]]
-then
-mkdir $HOME/Wordlist/wsession
-fi
-
 echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
 
 cd
@@ -50,6 +45,7 @@ lw="$(cat $HOME/Wordlist/wsession/lword)"
 echo -ne "\e[1;33m Continuing Last Session\e[1;32 ✓ \e[0m"
 sl
 else
+mkdir $HOME/Wordlist/wsession
 nl
 fi
 
