@@ -47,9 +47,7 @@ fi
 
 while [ $k -lt 18 ]
 do
-echo -ne "\e[34m Creating Wordlist.....\e[0m\ "'\r'
-echo -ne "\e[34m Creating Wordlist..........\e[0m\ "'\r'
-echo -ne "\e[34m Creating Wordlist...............\e[0m\ "'\r'
+echo -ne "\e[34m Creating Wordlist.....\e[0m "'\r'
 unset m
 m=""
 for ((i=0;i<k;++i))
@@ -71,6 +69,8 @@ fi
 unset d
 done
 
+echo -ne "\e[34m Creating Wordlist..........\e[0m "'\r'
+
 unset d
 unset a
 a=0
@@ -90,6 +90,8 @@ if [ $a -ne 0 ]
 then
 continue
 fi
+
+echo -ne "\e[34m Creating Wordlist...............\e[0m "'\r'
 
 f=$((k-1))
 i=$f
