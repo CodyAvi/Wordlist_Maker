@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 echo -e "\e[34m Installing core files.....\e[0m"
 cd $PREFIX/bin >/dev/null 2>&1
 rm -rf chr >/dev/null 2>&1
