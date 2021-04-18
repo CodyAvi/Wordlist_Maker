@@ -33,10 +33,8 @@ c[i]="$d"
 done
 }
 
-if [[ -f $HOME/Wordlist/wsession ]]
+if [[ ! -f $HOME/Wordlist/wsession ]]
 then
-echo ""
-else
 mkdir $HOME/Wordlist/wsession
 fi
 
