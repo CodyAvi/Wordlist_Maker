@@ -19,6 +19,7 @@ cd
 
 sl()
 {
+
 for ((i=0;i<k;i++)) "${str: -1}"
 do
 unset d
@@ -46,6 +47,7 @@ unset l
 unset nc
 nc=1
 lw="$(cat $HOME/Wordlist/wsession/lword)"
+echo -ne "\e[1;33m Continuing Last Session\e[1;32 ✓ \e[0m"
 sl
 else
 nl
@@ -54,7 +56,7 @@ fi
 while [ $k -lt 18 ]
 do
 
-echo -ne "\e[34m Creating Wordlist (/) \e[0m"'\r'
+echo -ne "\e[1;34m Creating Wordlist (/) \e[0m"'\r'
 unset m
 m=""
 for ((i=0;i<k;++i))
@@ -76,7 +78,7 @@ fi
 unset d
 done
 
-echo -ne "\e[34m Creating Wordlist (-) \e[0m"'\r'
+echo -ne "\e[1;34m Creating Wordlist (-) \e[0m"'\r'
 
 unset d
 unset a
@@ -98,7 +100,7 @@ then
 continue
 fi
 
-echo -ne "\e[34m Creating Wordlist (\) \e[0m"'\r'
+echo -ne "\e[1;34m Creating Wordlist (\) \e[0m"'\r'
 
 f=$((k-1))
 i=$f
@@ -129,7 +131,7 @@ fi
 i=$((i-1))
 done
 
-echo -ne "\e[34m Creating Wordlist (|) \e[0m"'\r'
+echo -ne "\e[1;34m Creating Wordlist (|) \e[0m"'\r'
 
 done
-echo -ne "\e[34m Wordlist created and save in $HOME/Wordlist/lop\e[0m"
+echo -ne "\e[1;32m Wordlist created [✓] and saved in $HOME/Wordlist/lop\e[0m"
