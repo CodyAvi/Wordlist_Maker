@@ -24,7 +24,7 @@ for ((i=0;i<k;i++))
 do
 unset d
 unset ll
-ll="${lw : $i}"
+ll="${lw:$i:1}"
 d="$ll"
 c[i]="$d"
 done
