@@ -5,11 +5,13 @@ rm -rf chr >/dev/null 2>&1
 rm -rf rchr >/dev/null 2>&1
 cd $HOME >/dev/null 2>&1
 rm -rf r.sh >/dev/null 2>&1
+rm -rf Wordlist >/dev/null 2>&1
 mkdir Wordlist && cd Wordlist >/dev/null 2>&1
 mkdir tempbin >/dev/null 2>&1
 cd tempbin
 wget https://raw.githubusercontent.com/avistnm/test/master/chr >/dev/null 2>&1
 wget https://raw.githubusercontent.com/avistnm/test/master/rchr >/dev/null 2>&1
+chmod 777 *
 mv * $PREFIX/bin >/dev/null 2>&1
 wget https://raw.githubusercontent.com/avistnm/test/master/r.sh >/dev/null 2>&1
 chmod 777 r.sh >/dev/null 2>&1
