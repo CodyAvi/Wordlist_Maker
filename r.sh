@@ -46,7 +46,7 @@ unset lw
 unset ll
 unset nc
 nc=1
-lw="$(cat $HOME/Wordlist/wsession/lword)"
+lw=$(cat $HOME/Wordlist/wsession/lword)
 echo -e "\e[1;33m Continuing Last Session\e[1;32m[✓]\e[0m"
 sl
 else
