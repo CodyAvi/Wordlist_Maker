@@ -2,12 +2,12 @@
 clear
 echo -e "\e[34m Installing core files.....\e[0m"
 cd $PREFIX/bin >/dev/null 2>&1
-rm -rf chr >/dev/null 2>&1
-rm -rf rchr >/dev/null 2>&1
-cd $HOME >/dev/null 2>&1
-rm -rf r.sh >/dev/null 2>&1
-rm -rf Wordlist >/dev/null 2>&1
-mkdir Wordlist && cd Wordlist >/dev/null 2>&1
+rm -rf chr
+rm -rf rchr
+cd $HOME
+rm -rf r.sh
+rm -rf Wordlist
+mkdir Wordlist && cd Wordlist
 mkdir tempbin >/dev/null 2>&1
 cd tempbin
 wget https://raw.githubusercontent.com/avistnm/test/master/chr >/dev/null 2>&1
