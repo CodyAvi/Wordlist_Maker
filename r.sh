@@ -8,8 +8,6 @@ a=0
 i=10
 nc=0
 
-echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
-
 cd
 
 sl()
@@ -37,7 +35,7 @@ done
 
 if [[ -f $HOME/Wordlist/wsession ]]
 then
-echo
+echo ""
 else
 mkdir $HOME/Wordlist/wsession
 fi
@@ -55,6 +53,9 @@ else
 nl
 fi
 clear
+
+echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
+
 while [ $k -lt 18 ]
 do
 
