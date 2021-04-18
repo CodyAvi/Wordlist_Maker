@@ -21,4 +21,4 @@ rm -rf tempbin >/dev/null 2>&1
 cd $HOME
 rm -rf setup
 echo -e "\e[34m Installation Successful!!\e[0m"
-echo -e "\e[34m Run Script by executing \e[1;32bash r.sh\e[0m"
+echo -e "\e[34m Run Script by executing \e[1;32 bash r.sh\e[0m"
