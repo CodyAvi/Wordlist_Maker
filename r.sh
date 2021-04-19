@@ -56,10 +56,9 @@ nl
 fi
 
 echo -e "\e[1;31m Press [Ctrl+C] to Exit the Script\e[0m"
-
+echo $k>$HOME/Wordlist/wsession/kval
 while [ $k -lt 18 ]
 do
-
 echo -ne "\e[1;34m Creating Wordlist (/) \e[0m"'\r'
 unset m
 m=""
@@ -97,10 +96,7 @@ c[i]="$(chr 33)"
 a=$((a++))
 done
 k=$((k+1));
-fi
-
-if [ $a -ne 0 ]
-then
+echo $k>$HOME/Wordlist/wsession/kval
 continue
 fi
 
