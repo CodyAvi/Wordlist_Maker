@@ -1,6 +1,5 @@
 #!/bin/bash
 clear
-k=8
 m=""
 p=0
 a=0
@@ -11,7 +10,8 @@ cd
 
 sl()
 {
-
+D=$(cat $HOME/Wordlist/wsession/kval)
+k=$D
 for ((i=0;i<k;i++))
 do
 unset d
@@ -24,7 +24,7 @@ done
 
 nl()
 {
-
+k=8
 rm -f $HOME/Wordlist/lop
 
 for ((i=0;i<k;++i ))
